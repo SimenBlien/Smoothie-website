@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Berry | Cherrytastic</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    
+</head>
+<body>
+<nav class="navbar">
+  <div class="Content-nav">
+      <div class="logo">
+          <a href="homepage.html">
+              <img class="img-logo" src="/image/BB-logo.png" alt="">
+          </a>
+      </div>
+      <div class="links">
+          <ul class="links-nav">
+              <li><a class="link" href="homepage.html"><span class="info-color-nav">Home</span></a></li>
+              <li><a class="link" href="index.html"><span class="info-color-nav">Smoothies</span></a></li>
+              <li><a class="link" href="contact.html"><span class="info-color-nav">About</span></a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+    <div class="intro-start">
+        <div class="text-intro">
+            <div class="stars" id="stars-intro">
+                <ion-icon class="star-intro" name="star-sharp"></ion-icon>
+                <ion-icon class="star-intro" name="star-sharp"></ion-icon>
+                <ion-icon class="star-intro" name="star-sharp"></ion-icon>
+                <ion-icon class="star-intro" name="star-sharp"></ion-icon>
+                <ion-icon class="star-intro" name="star-sharp"></ion-icon>
+            </div>
+            <h1 class="under-text">TASTES SO GOOD</h1>
+            <h1 class="headers">The Taste of<br>Cherrytastic</h1>
+            <p class="paragrafs">ntroducing Cherrytastic by Build Berry - a revitalizing cherry-infused blend perfect for post-workout rejuvenation. Savor the bold flavor and nourishing goodness in every sip, fueling your fitness journey with vitality. Stay tuned for Cherrytastic, your essential companion for taste and recovery!</p>
+            <p class="paragrafs">Ingredients: cherries, blueberries, blackberries, pineapple, yoghurt, milk, vanilla beans.</p>
+            <div class="button">
+              <a href="Berrylicious-info.html" class="button">
+                  <button class="normal-button">Add to cart</button>
+              </a>
+            </div>
+            <div class="phonenumber-all">
+                <ion-icon class="phonenumber-icon" name="call-outline"></ion-icon>
+                <div class="tel-text">
+                    <p class="number-intro">+47 983 18 885</p>
+                </div>
+            </div>
+        </div>
+        <div class="intro-pics">
+            <img class="intro-pic" id="intro-pic2" src="/image/info-image-cherry.png" alt="intropic1">
+        </div>
+    </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="/index.html">Smoothies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Help</h4>
+        <ul>
+          <li><a href="mailto:contact@buildberry.com">Mail</a></li>   
+          <li><a href="tel:98318885">Phone</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Creators</h4>
+        <ul>
+          <li><a href="">Jonas Røgeberg Lynnebakken</a></li>
+          <li><a href="">Simen Evenrud Blien</a></li>
+          <li><a href="">Markus Nordviken</a></li>
+          <li><a href="">Andreas Gilbert Leite</a></li>
+          <li><a href="">Alexander Leikis Slettum</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./jquery/jquery-3.7.1.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+
+  // Navbar blir solid når du skroller forbi starten av siden
+  $(document).ready(function () {
+      $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop >= 1) {
+          $(".navbar").addClass("solid-nav");
+          console.log("solid-nav");
+        } else {
+          $(".navbar").removeClass("solid-nav");
+          console.log("no-solid-nav");
+        }
+      });
+    });
+
+</script>
+</body>
+</html>
